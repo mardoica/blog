@@ -1,6 +1,7 @@
 import { AppProps } from "next/app";
 import Script from "next/script";
 import "../styles/index.css";
+import "../styles/toast.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 	return (

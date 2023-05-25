@@ -7,7 +7,6 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
-import VisitsBoard from "../components/visits-board";
 
 type Props = {
 	allPosts: Post[];
@@ -34,7 +33,6 @@ export default function Index({ allPosts }: Props) {
 							excerpt={heroPost.excerpt}
 						/>
 					)}
-					{/* <VisitsBoard /> */}
 					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
 				</Container>
 			</Layout>
