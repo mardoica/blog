@@ -29,7 +29,7 @@ export default function Post({ post, morePosts, preview }: Props) {
 			<Container>
 				<Header />
 				{router.isFallback ? (
-					<PostTitle>Loading…</PostTitle>
+					<PostTitle>Carregando</PostTitle>
 				) : (
 					<>
 						<article className="mb-32">
